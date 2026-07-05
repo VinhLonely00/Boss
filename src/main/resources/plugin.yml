@@ -1,0 +1,8 @@
+name: SuperWardenBoss
+version: 1.0
+main: com.yourname.superwarden.SuperWardenPlugin
+api-version: '1.21'
+commands:
+  spawnsuperwarden:
+    description: Triệu hồi Siêu Warden Khổng Lồ
+    permission: superwarden.admin
