@@ -184,9 +184,10 @@ public class SuperWardenPlugin extends JavaPlugin implements Listener, CommandEx
                 }
             }
 
+            // Nội tại dưới 50% máu: Giảm 40% sát thương nhận vào + Hiệu ứng luồng gió GUST (Sửa lỗi hạt SHIELD)
             if (boss.getHealth() <= 918.0) {
                 event.setDamage(event.getDamage() * 0.6);
-                boss.getWorld().spawnParticle(Particle.SHIELD, boss.getLocation().add(0, 2, 0), 3);
+                boss.getWorld().spawnParticle(Particle.GUST, boss.getLocation().add(0, 1, 0), 3); 
             }
         }
 
